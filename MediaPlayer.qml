@@ -9,43 +9,92 @@ Item {
         height:  radioPlayerItem.height
         //anchors.centerIn: parent.top
         gradient: Gradient {
-                GradientStop { position: 0.0; color: "#7AFAFF" }
-                GradientStop { position: 1.0; color: "#8CFBFF" }
-            }
+            GradientStop { position: 0.0; color: "#7AFAFF" }
+            GradientStop { position: 1.0; color: "#8CFBFF" }
+        }
 
-        Row{
+        Grid{
             id: radioPlayerRow
-            anchors.left: radioPlayerRec
             spacing: 10
 
-//            Rectangle { color: "red"; width: 50; height: 50 }
-//            Rectangle { color: "green"; width: 20; height: 50 }
-//            Rectangle { color: "blue"; width: 50; height: 20 }
-            Image {
-                source: "Artwork/Player/play.png"
-                sourceSize.width: radioPlayerRec.width/1.1
-                sourceSize.height: (radioPlayerDecorationStripe.y /1.1)
+            //            Rectangle { color: "red"; width: 50; height: 50 }
+            //            Rectangle { color: "green"; width: 20; height: 50 }
+            //            Rectangle { color: "blue"; width: 50; height: 20 }
 
-            }
+            Rectangle{
+                id: playButton
+                width: radioPlayerRec.width/5.5
+                height: (radioPlayerRec.height/1.2)
+                color: "transparent"
 
-            Rectangle {
-                id: volumeSilder
-                width: (radioPlayerRec.width/1.5)
-                height: (radioPlayerDecorationStripe.y /6)
-                color: "black"
-//                anchors.horizontalCenter: radioPlayerRec.horizontalCenter
-                anchors.verticalCenter: radioPlayerRow.verticalCenter
-                radius: 20
-                border{
-                    width: 2
-                    color: "white"
+                Image {
+                    source: "Artwork/Player/play.png"
+                    anchors.fill: playButton
                 }
             }
 
+//            Rectangle{
+//                id: volumeSlider
 
+//                width: (radioPlayerRow.width/1.5)
+//                height: (radioPlayerRow.height /3.5)
+
+//                //                color: "transparent"
+//                color: "green"
+
+                Row{
+                    id:volumeSliderRow
+                    spacing: 4
+
+//                    width: volumeSlider.width
+//                    height: volumeSlider.height
+                    width: (radioPlayerRow.width/1.5)
+                    height: (radioPlayerRow.height /3.5)
+
+                    Rectangle{
+                        id: volumeIconRec
+                        width: 20
+                        height: volumeSliderRow.height
+                        color: "transparent"
+
+                        Image {
+                            id: volumeIcon
+                            source: "Artwork/Player/volume.png"
+                            anchors.fill: volumeIconRec
+                        }
+                    }
+
+
+                    Rectangle {
+                        id: volumeBar
+                        width: volumeSliderRow.width
+                        height: volumeSliderRow.height/2
+                        color: "black"
+                        //                anchors.horizontalCenter: radioPlayerRec.horizontalCenter
+                        anchors.centerIn: volumeSliderRow
+                        radius: 20
+                        border{
+                            width: 2
+                            color: "white"
+                        }
+                    }
+                }
+//            }
 
 
         }
+
+
+
+
+
+
+
+
+
+
+
+
 
         Rectangle{
             id: radioPlayerDecorationStripe
