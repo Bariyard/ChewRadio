@@ -4,9 +4,6 @@ import QtQuick.Window 2.0
 
 Rectangle {
     id: root
-    width: Screen.width /4
-    height: Screen.height/2
-
 ////-----------------logo --------------------//////
     Rectangle{
         id: logoRec
@@ -35,12 +32,12 @@ Rectangle {
 
 
 ////-----------------Player --------------------//////
-    MediaPlayer{
-        id: player
-        width: Screen.width/2
-        height: Screen.height/12
-        //anchors.centerIn: parent.top
-    }
+//    MediaPlayer{
+//        id: player
+//        width: Screen.width/2
+//        height: Screen.height/12
+//        //anchors.centerIn: parent.top
+//    }
 
 
     MouseArea {
