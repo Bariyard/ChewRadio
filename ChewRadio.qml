@@ -36,6 +36,10 @@ Window{
         autoLoad: true
         autoPlay: true
         volume: 0.7
+        onStatusChanged: {
+              console.log(audioPlayer.status)
+
+        }
     }
 
 
