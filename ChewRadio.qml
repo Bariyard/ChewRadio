@@ -1,54 +1,58 @@
-import QtQuick 2.3
+import QtQuick 2.0
 import QtQuick.Window 2.0
 
 
 Rectangle {
     id: root
-    width: Screen.width /4
+    width:  320//Screen.width /4
     height: Screen.height/2
+    color: "green"
 
-////-----------------logo --------------------//////
     Rectangle{
-        id: logoRec
-        width: 212
-        height: 212
+        id: headerRec
+        color: "black"
+        width: root.width
+        height: 30
+        //clip: true
 
-        color: "white"
-        radius: 20
-        border.color: "black"
-        border.width: 10
-
-    }
-    Image{
-        id: logoImg
-        sourceSize.width: (logoRec.width - (logoRec.border.width * 3))
-        sourceSize.height:  (logoRec.height - (logoRec.border.width * 3))
-        source: "Artwork/Radio/radio1_crop.png"
-        anchors.centerIn: logoRec
-
-
-        //anchors.fill: logoRec
-
-    }
-
-////-----------------logo --------------------//////
+        Row{
+            spacing: 5
+//            width: root.width
+//            height: r
+        Rectangle{
+            id: headphoneRec
+            color: "transparent"
+            //anchors.verticalCenter: headerRec.verticalCenter
+            width: 20
+            height: 15
 
 
-////-----------------Player --------------------//////
-    MediaPlayer{
-        id: player
-        width: Screen.width/2
-        height: Screen.height/12
-        //anchors.centerIn: parent.top
-    }
+
+            MediaPlayerLogoFont{
+                id: headphoneLogo
+                // 0, -18, -36,
+                position: -50
+                //anchors.verticalCenter: headerRec.verticalCenter
+                anchors.fill: headphoneRec
+            }
+        }
 
 
-    MouseArea {
-        anchors.fill: parent
-        onClicked: {
-            Qt.quit();
+    Rectangle{
+        id: volumeRec
+        color: "transparent"
+        //anchors.verticalCenter: headerRec.verticalCenter
+        width: 20
+        height: 15
+
+        MediaPlayerLogoFont{
+            id: volumeLogo
+            // 0, -18, -36,
+            position: 0
+            //anchors.verticalCenter: headerRec.verticalCenter
+            anchors.fill: volumeRec
         }
     }
-
+    }
 }
-
+}
