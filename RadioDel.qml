@@ -11,24 +11,37 @@ Item{
         width: parent.width
         height: parent.height
 
-//        border.color: "blue"
-//            border.width: 1
-//            //radius: 10
+//        border.color: "black"
+//            border.width: 3
+//            radius: 10
 
-        MouseArea{
-            anchors.fill: logoRec
-        }
+
     }
 
+    MouseArea{
+        anchors.fill: logoRec
+        hoverEnabled: true
+//        onEntered: {
+//            logoRec.width = logoRec.width + 10
+//            logoRec.height = logoRec.height + 10
+//        }
+
+//        onExited: {
+//            logoRec.width = logoRec.width - 10
+//            logoRec.height = logoRec.height - 10
+//        }
+    }
 
     Image{
         id: logoImg
         source: icon
         smooth: true
-        sourceSize.width: logoRec.width //- logoRec.border.width)
-        sourceSize.height: logoRec.height //- logoRec.border.width)
+        sourceSize.width: logoRec.width - 3//- logoRec.border.width)
+        sourceSize.height: logoRec.height - 3//- logoRec.border.width)
 
-        anchors.fill: logoRec
+        //anchors.margins:4
+        anchors.centerIn: logoRec
+
 
     }
 }

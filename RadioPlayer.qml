@@ -34,9 +34,13 @@ import QtQuick 2.0
                 width: radioPlayerRec.width/5
                 height: (radioPlayerRec.height/1.5)
                 color: "transparent"
+
                 Image {
+                    smooth: true
                     id: playButtonImage
                     source: "Artwork/Player/pause.png"
+                    sourceSize.width: playButton.width
+                    sourceSize.height: playButton.height
                     anchors.fill: playButton
                 }
 
@@ -54,7 +58,10 @@ import QtQuick 2.0
                    }
                }
             }
+
         }
+
+
 
 
         Rectangle{
