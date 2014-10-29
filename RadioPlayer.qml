@@ -25,7 +25,7 @@ import QtQuick 2.0
             //            Rectangle { color: "blue"; width: 50; height: 20 }
             anchors.verticalCenter: radioPlayerRec.verticalCenter
             anchors.left: radioPlayerRec.left
-            anchors.leftMargin: 3
+            anchors.leftMargin: 11
             anchors.top: radioPlayerRec.top
             anchors.topMargin: 10
 
