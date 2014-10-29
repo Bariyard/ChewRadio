@@ -17,14 +17,13 @@ Window{
     Column{
         id: columnView
         //anchors.centerIn: root
-
         Rectangle{ id: headRec ; width: root.width; height: 30; color :"black"
             Header{ anchors.fill: headRec}
         }
+
         Rectangle{ id: playRec ; width: root.width; height: 100 ; color: "blue"
             RadioPlayer{anchors.fill:playRec}
         }
-
 
         Rectangle{ id: radioSelectionRec ; width: root.width - 10; height: (root.height - (headRec.height + playRec.height) );
             anchors.horizontalCenter: columnView.horizontalCenter
@@ -36,7 +35,7 @@ Window{
                 width: radioSelectionRec.width; height: radioSelectionRec.height
                 anchors.fill: radioSelectionRec
                 interactive: false
-                cellWidth: radioSelectionRec.width/4; //cellHeight: root.height
+                cellWidth: radioSelectionRec.width/4; cellHeight: radioSelectionRec.width/4
                 model: RadioInfoModel {}
                 delegate: RadioDel{}
             }
