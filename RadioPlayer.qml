@@ -5,6 +5,11 @@ import QtQuick 2.0
 
     Rectangle{
         id: radioPlayerRec
+
+        property string stationArtwork: ""
+        property string stationName: "-"
+        property string stationSite: "-"
+
         //color: "black"
         width: parent.width
         height: 80
@@ -28,6 +33,30 @@ import QtQuick 2.0
             anchors.leftMargin: 11
             anchors.top: radioPlayerRec.top
             anchors.topMargin: 10
+
+            Rectangle{
+                id: radioPlayerArtworkRec
+                width: radioPlayerRec.width/5
+                height:(radioPlayerRec.height/1.5)
+                color: "transparent"
+                visible: false
+                Image {
+                    id: radioPlayerArtwork
+                    source: stationArtwork
+                    smooth: true
+
+                    sourceSize.width: radioPlayerArtworkRec.width
+                    sourceSize.height: radioPlayerArtworkRec.height
+                    onSourceChanged: {
+                        radioPlayerArtworkRec.visible = true;
+                    }
+                    anchors.fill: radioPlayerArtworkRec
+                }
+            }
+
+
+
+
 
             Rectangle{
                 id: playButton
@@ -57,6 +86,29 @@ import QtQuick 2.0
                        }
                    }
                }
+            }
+
+            Column{
+                id: stationInfo
+
+                Row{
+                    Text{
+                        text: "Station: "
+                        color: "white"
+                    }
+                    Text {
+                        text: stationName
+                    }
+                }
+
+                Row{
+                    Text{
+                        text: "Site: "
+                    }
+                    Text {
+                        text: stationSite
+                    }
+                }
             }
 
         }

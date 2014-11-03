@@ -20,7 +20,15 @@ Item{
 
     MouseArea{
         anchors.fill: logoRec
-        hoverEnabled: true
+        onClicked:
+        {
+            audioPlayer.source = streamingUrl
+            player.stationName = name
+            player.stationSite = site
+            player.stationArtwork = icon
+
+        }
+//        hoverEnabled: true
 //        onEntered: {
 //            logoRec.width = logoRec.width + 10
 //            logoRec.height = logoRec.height + 10

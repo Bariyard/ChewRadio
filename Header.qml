@@ -3,6 +3,9 @@ import QtQuick 2.0
 //Item {
 //    id: header
     Rectangle{
+        property string connectionStatus: "Ready"
+
+
         id: headerRec
         color: "black"
         width: parent.width
@@ -96,16 +99,14 @@ import QtQuick 2.0
                         if(volumeGainRec.width <= 100 && volumeGainRec.width >= 0)
                             audioPlayer.volume = volumeGainRec.width /100
                     }
-
                 }
-
             }
 
             // Rectangle{
 
             Text {
                 id: connectionStatusText
-                text: "Connected"
+                text: connectionStatus
                 color: "violet"
 
                 MouseArea{
