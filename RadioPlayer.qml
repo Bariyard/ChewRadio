@@ -116,6 +116,7 @@ Item {
 
                 onClicked: {
                     playRec.visible = false
+
                 }
             }
         }

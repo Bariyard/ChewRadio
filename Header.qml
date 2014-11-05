@@ -110,5 +110,33 @@ Item {
                 }
             }
         }
+
+        Rectangle{
+            id: showRadioPlayerRec
+            width: showText.width
+            height: 15
+            color :"transparent"
+
+            x: headerRec.width - (showRadioPlayerRec.width + 10)
+
+
+            Text {
+                id: showText
+                text: "show"
+                color: "orange"
+            }
+
+            MouseArea{
+                anchors.fill: showRadioPlayerRec
+                onClicked: {
+                    playRec.visible = true
+                    showRadioPlayerRec.visible = false
+                }
+            }
+
+
+
+
+        }
     }
 }
