@@ -12,8 +12,6 @@ Window{
     minimumWidth: 320
     minimumHeight: 30
 
-    //color: "white"
-
     Column{
         id: columnView
         //anchors.centerIn: root
@@ -40,30 +38,16 @@ Window{
                 delegate: RadioDel{}
             }
         }
-
-
-
-
-
-
     }
 
     Audio{
         id: audioPlayer
-//        ////        source: "/Users/wrbally/Music/iTunes/iTunes Media/Music/Boeboe/Welcome to Doggtown/04 We Feelin' (Love).mp3"
-//        //source: "http://podcast.dgen.net:8000/rinseradio"
-//        //        //magic
-//        source: "http://icy-e-05.sharp-stream.com/magic1054.mp3"
-
-//        //        //radio1
-//        //source: "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_intl_lc_radio1_p"
-//        //kcrw
-        source: "http://kcrw.ic.llnwd.net/stream/kcrw_live"
-        autoLoad: true
+        source: ""
+        autoLoad: false
         autoPlay: true
         volume: 0.7
         onStatusChanged: {
-              console.log(audioPlayer.status)
+            console.log(audioPlayer.status)
 
             switch(audioPlayer.status){
 
@@ -105,22 +89,8 @@ Window{
                 break;
             default:break;
             }
-
             console.log(audioPlayer.metaData.title)
         }
-
-
-
-//        onMetaDataChanged: {
-//            console.log(audioPlayer.metaData.title)
-//        }
-
-
-//        onMetaDataChanged: {
-//            //console.log(audioPlayer.metaData)
-//        }
     }
-
-
 
 }

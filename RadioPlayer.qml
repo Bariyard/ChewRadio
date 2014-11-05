@@ -1,33 +1,23 @@
 import QtQuick 2.0
 
-//Item {
-//    id: radioPlayerItem
+Item {
+    id: radioPlayerItem
+    property string stationArtwork: ""
+    property string stationName: "-"
+    property string stationSite: "-"
 
     Rectangle{
         id: radioPlayerRec
-
-        property string stationArtwork: ""
-        property string stationName: "-"
-        property string stationSite: "-"
-
-        //color: "black"
         width: parent.width
-        height: 80
-
-        //anchors.centerIn: root.top
+        height: 100
         gradient: Gradient {
             GradientStop { position: 0.0; color: "#7AFAFF" }
             GradientStop { position: 1.0; color: "#8CFBFF" }
         }
-        //color: "blue"
 
         Row{
             id: radioPlayerRow
             spacing: 10
-
-            //            Rectangle { color: "red"; width: 50; height: 50 }
-            //            Rectangle { color: "green"; width: 20; height: 50 }
-            //            Rectangle { color: "blue"; width: 50; height: 20 }
             anchors.verticalCenter: radioPlayerRec.verticalCenter
             anchors.left: radioPlayerRec.left
             anchors.leftMargin: 11
@@ -54,10 +44,6 @@ import QtQuick 2.0
                 }
             }
 
-
-
-
-
             Rectangle{
                 id: playButton
                 width: radioPlayerRec.width/5
@@ -67,16 +53,17 @@ import QtQuick 2.0
                 Image {
                     smooth: true
                     id: playButtonImage
-                    source: "Artwork/Player/pause.png"
+                    source: {audioPlayer.playbackState === 1 ? "Artwork/Player/pause.png" :"Artwork/Player/play.png"}
                     sourceSize.width: playButton.width
                     sourceSize.height: playButton.height
                     anchors.fill: playButton
                 }
 
-
                MouseArea{
                    anchors.fill: playButton
                    onClicked: {
+                       if(audioPlayer.status === 1)
+                           return
                        if(audioPlayer.playbackState === 1){
                             playButtonImage.source = "Artwork/Player/play.png"
                            audioPlayer.pause()
@@ -90,11 +77,9 @@ import QtQuick 2.0
 
             Column{
                 id: stationInfo
-
                 Row{
                     Text{
                         text: "Station: "
-                        color: "white"
                     }
                     Text {
                         text: stationName
@@ -113,9 +98,6 @@ import QtQuick 2.0
 
         }
 
-
-
-
         Rectangle{
             id: radioPlayerDecorationStripe
             width: radioPlayerRec.width
@@ -124,4 +106,4 @@ import QtQuick 2.0
             y: radioPlayerRec.height -10
         }
     }
-//}
+}

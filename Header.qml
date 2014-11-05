@@ -1,11 +1,9 @@
 import QtQuick 2.0
 
-//Item {
-//    id: header
+Item {
+    id: headerItem
+    property string connectionStatus: "Ready"
     Rectangle{
-        property string connectionStatus: "Ready"
-
-
         id: headerRec
         color: "black"
         width: parent.width
@@ -18,21 +16,16 @@ import QtQuick 2.0
             anchors.verticalCenter: headerRec.verticalCenter
             anchors.left: headerRec.left
             anchors.leftMargin: 10
-            //            width: root.width
-            //            height: r
             Rectangle{
                 id: headphoneRec
                 color: "transparent"
-                //anchors.verticalCenter: headerRec.verticalCenter
                 width: 20
                 height: 15
 
 
                 MediaPlayerLogoFont{
                     id: headphoneLogo
-                    // 0, -18, -36,
                     position: -50
-                    //anchors.verticalCenter: headerRec.verticalCenter
                     anchors.fill: headphoneRec
                 }
             }
@@ -40,15 +33,12 @@ import QtQuick 2.0
             Rectangle{
                 id: volumeRec
                 color: "transparent"
-                //anchors.verticalCenter: headerRec.verticalCenter
                 width: 20
                 height: 15
 
                 MediaPlayerLogoFont{
                     id: volumeLogo
-                    // 0, -18, -36,
                     position: 0
-                    //anchors.verticalCenter: headerRec.verticalCenter
                     anchors.fill: volumeRec
                 }
 
@@ -102,8 +92,6 @@ import QtQuick 2.0
                 }
             }
 
-            // Rectangle{
-
             Text {
                 id: connectionStatusText
                 text: connectionStatus
@@ -123,4 +111,4 @@ import QtQuick 2.0
             }
         }
     }
-
+}
