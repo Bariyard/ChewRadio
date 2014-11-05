@@ -99,6 +99,28 @@ Item {
         }
 
         Rectangle{
+            id: hideRec
+            color: "transparent"
+            width: stationInfo.width
+            height: 20
+//            anchors.right: radioPlayerRec.right
+            x: radioPlayerRec.width - 40
+            y: radioPlayerRec.height - 40
+            Text{
+
+                text: "Hide"
+                anchors.fill: hideRec
+            }
+            MouseArea{
+                anchors.fill: hideRec
+
+                onClicked: {
+                    playRec.visible = false
+                }
+            }
+        }
+
+        Rectangle{
             id: radioPlayerDecorationStripe
             width: radioPlayerRec.width
             height: 2.5
