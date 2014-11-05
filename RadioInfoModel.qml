@@ -19,7 +19,7 @@ ListModel{
                 UK on FM between 88.1 and 90.2 MHz from studios in Western House, adjacent to Broadcasting House in central London.
                 Programmes are relayed on digital radio via DAB, Sky, Cable TV, IPTV, Freeview, Freesat and the Internet.
                 The station's programming is broadcast on a network of FM transmitters of up to 250 kW, the strongest FM signals in the EU"
-        streamingUrl:""
+        streamingUrl:"http://bbcmedia.ic.llnwd.net/stream/bbcmedia_intl_lc_radio2_p"
         site:	"http://www.bbc.co.uk/radio2"
     }
 
@@ -28,7 +28,7 @@ ListModel{
         icon: "Artwork/logo/BBC Radio 3.png"
         info: "BBC Radio 3 is a British radio network operated by the BBC. Its output centres on classical music and opera, but jazz, world music, drama, culture and the arts also feature.[1] The station is the world’s most significant commissioner of new music,[2][3] and through its New Generation Artists scheme promotes young musicians of all nationalities.[4] The station is notable for its broadcast of the BBC Proms concerts, live and in full, each summer in addition to performances by the BBC Orchestras and Singers. There are regular productions of both classic plays and newly commissioned drama.
     Radio 3 won the Sony Radio Academy UK Station of the Year Gold Award for 2009[5] and was nominated again in 2011"
-        streamingUrl: ""
+        streamingUrl: "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_intl_lc_radio3_p"
         site: "http://www.bbc.co.uk/radio3"
     }
 
@@ -38,7 +38,7 @@ ListModel{
         info: "BBC Radio 5 Live is the BBC's national radio service that specialises in live BBC News, phone-ins, interviews and sports commentaries. It is the principal radio station covering sport in the United Kingdom, broadcasting virtually all major sports events staged in the UK or involving British competitors.
     Radio 5 Live was launched in March 1994 as a repositioning of the original Radio 5, which was launched on 27 August 1990.[2] It is transmitted via analogue radio in AM on medium wave 693 and 909 kHz and digitally via digital radio, television and via an Internet stream. Due to rights restrictions, coverage of some events (in particular live sport) is not available on-line or is restricted to UK addresses.
     The station broadcasts from MediaCityUK in Salford[3] and is a department of the BBC North division."
-        streamingUrl: ""
+        streamingUrl: "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_intl_lc_5live_q"
         site: "http://www.bbc.co.uk/5live"
     }
 
@@ -48,7 +48,7 @@ ListModel{
         name: "Heart Radio UK"
         icon: "Artwork/logo/Heart Radio uk.png"
         info: "Heart is a radio network of 21 adult contemporary local radio stations operated by Global Radio in the United Kingdom. Each broadcasts a unique mix of local and networked programming. Eighteen of the Heart stations are owned by Global, the other three are operated under franchise agreements"
-        streamingUrl: ""
+        streamingUrl: "http://ice-sov.musicradio.com:80/HeartLondonMP3"
         site: "http://www.heart.co.uk/"
     }
 
@@ -57,7 +57,7 @@ ListModel{
         icon: "Artwork/logo/Capital FM.png"
         info: "Capital is a radio network of eleven independent contemporary hit radio stations in the United Kingdom, owned and operated by Global Radio.[1] Capital was previously known as Mix, One, Galaxy and Hit Music at various times. The stations were formerly owned by GCap Media and Chrysalis Radio prior to their respective takeovers by Global Radio and, with the exception of Capital London, were all part of Galaxy or Hit Music until they were merged to form the Capital network on Monday 3 January 2011.
     The stations serve an audience of 7.1 million listeners and target a core audience in the 14-34 age group"
-        streamingUrl: ""
+        streamingUrl: "http://media-ice.musicradio.com:80/Capital"
         site: "http://www.capitalfm.com/"
     }
 
@@ -65,7 +65,7 @@ ListModel{
         name: "Classic FM"
         icon: "Artwork/logo/Classic FM.png"
         info: "Classic FM, one of the United Kingdom's three Independent National Radio stations, broadcasts classical music in a popular and accessible style."
-        streamingUrl: ""
+        streamingUrl: "http://media-ice.musicradio.com:80/ClassicFMMP3"
         site: "http://www.classicfm.com/"
     }
 
@@ -74,7 +74,7 @@ ListModel{
         name: "KISS"
         icon: "Artwork/logo/Kiss FM.png"
         info: " Kiss is a UK radio station broadcasting on FM and National DAB, specialising in hip hop, R&B, urban and electronic dance music. It also broadcasts on DAB Digital Radio around the UK & nationally on Freeview, Sky and Virgin Media. The Station forms part of the Bauer Passion Portfolio."
-        streamingUrl: ""
+        streamingUrl: "http://icy-e-02.sharp-stream.com:80/kiss100.mp3"
         site: "www.kissfmuk.com/"
     }
 
@@ -83,7 +83,7 @@ ListModel{
         name: "Smooth"
         icon: "Artwork/logo/Smooth Radio.png"
         info: "Smooth Radio is a network of six adult contemporary local radio stations in England and Scotland, including eighteen AM stations which replaced Gold, that launched in March 2014. Each station broadcasts localised breakfast and drivetime programming on weekdays, with networked shows simulcast from London at all other times. Three of the stations are owned and operated by Global Radio, with the remaining three owned by Communicorp as a franchise."
-        streamingUrl: ""
+        streamingUrl: "http://media-ice.musicradio.com/SmoothLondonMP3"
         site: "www.smoothradio.com"
     }
 
@@ -112,18 +112,18 @@ ListModel{
         icon: "Artwork/logo/KCRW.png"
         info: "KCRW (89.9 MHz FM) is a public radio station broadcasting from the campus of Santa Monica College in Santa Monica, California, carrying a mix of National Public Radio news, talk radio and freeform music format. A network of repeaters and broadcast translators allows the station to serve the Los Angeles metropolitan area and other communities in Southern California. The station has also become widely known because of nationally distributed programming, streaming Internet radio broadcasts, and podcasts.[citation needed] It has a transmitter in Los Angeles' Laurel Canyon district.
     KCRW broadcasts in the HD radio format."
-        streamingUrl: ""
+        streamingUrl: "http://kcrw.ic.llnwd.net/stream/kcrw_live"
         site: "www.kcrw.com/"
     }
 
 
 
     ListElement{
-        name: "KEXP-FM"
+        name: "KEXP"
         icon: "Artwork/logo/kexp.png"
         info: "KEXP-FM (90.3 FM) is a public radio station based in Seattle, Washington, that specializes in alternative and indie rock programmed by its disc jockeys. Its broadcasting license is owned by the University of Washington, and the station is operated by Friends of KEXP, an independent 501(c)3 organiztaion.[1] The station was formerly operated under the call letters KCMU. In 2001, a partnership was formed between Paul Allen's Experience Music Project and KEXP, which provided the station with significant operating support for several years.[2] The station is now operated independently by Friends of KEXP.[3]
     For the majority of its schedule, KEXP broadcasts a mix of primarily alternative rock. The station also features weekly speciality programs dedicated to particular musical genres, including rockabilly, blues, world music, hip hop, electronica, punk, and alternative country. Live, in-studio performances by artists are also regularly featured."
-        streamingUrl: ""
+        streamingUrl: "http://live-aacplus-64.kexp.org/kexp64.aac"
         site: "www.kexp.org"
     }
 
@@ -131,7 +131,7 @@ ListModel{
         name: "SXSWfm"
         icon: "Artwork/logo/sxsw FM.png"
         info: ""
-        streamingUrl: ""
+        streamingUrl: "http://2563.live.streamtheworld.com:443/SXSWFM_SC"
         site: "http://sxsw.com/fm"
     }
 

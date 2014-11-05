@@ -14,7 +14,7 @@ Window{
 
     Column{
         id: columnView
-        //anchors.centerIn: root
+
         Rectangle{ id: headRec ; width: root.width; height: 30; color :"black"
             Header{ id: head; connectionStatus: "Ready"; anchors.fill: headRec}
         }
