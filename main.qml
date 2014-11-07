@@ -33,7 +33,7 @@ ApplicationWindow {
         id: columnView
 
         Rectangle{ id: headRec ; width: root.width; height: 30; color :"black"
-            Header{ id: head; connectionStatus: "Ready"; anchors.fill: headRec}
+            Header{ id: head; connectionStatus: "Ready" ;showButtonVisible: false; anchors.fill: headRec}
         }
 
         Rectangle{ id: playRec ; width: root.width; height: 100 ; color: "blue"

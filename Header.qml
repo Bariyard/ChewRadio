@@ -3,6 +3,9 @@ import QtQuick 2.0
 Item {
     id: headerItem
     property string connectionStatus: "Ready"
+    property bool showButtonVisible: false
+
+
     Rectangle{
         id: headerRec
         color: "black"
@@ -116,27 +119,25 @@ Item {
             width: showText.width
             height: 15
             color :"transparent"
-
-            x: headerRec.width - (showRadioPlayerRec.width + 10)
-
+            anchors.verticalCenter: headerRec.verticalCenter
+            anchors.right:  headerRec.right
+            anchors.rightMargin: 5
+            visible: showButtonVisible
 
             Text {
                 id: showText
-                text: "show"
+                text: "Show"
                 color: "orange"
+                anchors.centerIn: showRadioPlayerRec
             }
 
             MouseArea{
                 anchors.fill: showRadioPlayerRec
                 onClicked: {
                     playRec.visible = true
-                    showRadioPlayerRec.visible = false
+                    showButtonVisible = false
                 }
             }
-
-
-
-
         }
     }
 }
