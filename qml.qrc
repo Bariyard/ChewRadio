@@ -29,5 +29,7 @@
         <file>Artwork/Player/stop.png</file>
         <file>Artwork/Player/volume-on.png</file>
         <file>Artwork/Player/volume.png</file>
+        <file>Artwork/logo/kerrang.png</file>
+        <file>Artwork/logo/brooklynradio.jpg</file>
     </qresource>
 </RCC>

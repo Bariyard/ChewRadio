@@ -135,6 +135,25 @@ ListModel{
         site: "http://sxsw.com/fm"
     }
 
+    ListElement{
+        name: "Kerrang"
+        icon: "Artwork/logo/kerrang.png"
+        info: ""
+        streamingUrl: "http://icy-e-05.sharp-stream.com/kerrang.mp3"
+        site: "http://www.kerrang.com/"
+    }
+
+    ListElement{
+        name: "Brooklyn Radio"
+        icon: "Artwork/logo/brooklynradio.jpg"
+        info: ""
+        streamingUrl: "http://streaming.radionomy.com/BrooklynRadio"
+        site: "http://brooklynradio.com/"
+    }
+
+
+
+
 
 
 }

@@ -6,17 +6,17 @@ import QtQuick.Window 2.0
 ApplicationWindow {
     id: root
     width:  320//Screen.width /4
-    height: Screen.height/2
+    height: 600//Screen.height/2
     visible: true
     title: "ChewRadio"
 
     menuBar: MenuBar {
         Menu {
             title: qsTr("File")
-            MenuItem {
+            /*MenuItem {
                 text: qsTr("&Open")
                 onTriggered: console.log("Open action triggered");
-            }
+            }*/
             MenuItem {
                 text: qsTr("Exit")
                 onTriggered: Qt.quit();
