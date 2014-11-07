@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Header.qml</file>
+        <file>MediaPlayerLogoFont.qml</file>
+        <file>RadioDel.qml</file>
+        <file>RadioInfoModel.qml</file>
+        <file>RadioPlayer.qml</file>
+        <file>Artwork/logo/BBC Radio 1.png</file>
+        <file>Artwork/logo/BBC Radio 2.png</file>
+        <file>Artwork/logo/BBC Radio 3.png</file>
+        <file>Artwork/logo/BBC Radio 5 live.png</file>
+        <file>Artwork/logo/Capital FM.png</file>
+        <file>Artwork/logo/Classic FM.png</file>
+        <file>Artwork/logo/Heart Radio uk.png</file>
+        <file>Artwork/logo/KCRW.png</file>
+        <file>Artwork/logo/kexp.png</file>
+        <file>Artwork/logo/Kiss FM.png</file>
+        <file>Artwork/logo/kissfm2.png</file>
+        <file>Artwork/logo/magic.png</file>
+        <file>Artwork/logo/rinse.png</file>
+        <file>Artwork/logo/Smooth Radio.png</file>
+        <file>Artwork/logo/sxsw FM.png</file>
+        <file>Artwork/Player/eyebrow-icons-sa091bb8b37.png</file>
+        <file>Artwork/Player/logoFont.png</file>
+        <file>Artwork/Player/pause.png</file>
+        <file>Artwork/Player/pause_play_stop_black.png</file>
+        <file>Artwork/Player/play.png</file>
+        <file>Artwork/Player/stop.png</file>
+        <file>Artwork/Player/volume-on.png</file>
+        <file>Artwork/Player/volume.png</file>
+    </qresource>
+</RCC>

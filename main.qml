@@ -1,12 +1,29 @@
 import QtQuick 2.0
-import QtQuick.Window 2.0
+import QtQuick.Controls 1.2
 import QtMultimedia 5.0
+import QtQuick.Window 2.0
 
-Window{
-    title: "ChewRadio"
+ApplicationWindow {
     id: root
     width:  320//Screen.width /4
     height: Screen.height/2
+    visible: true
+    title: "ChewRadio"
+
+    menuBar: MenuBar {
+        Menu {
+            title: qsTr("File")
+            MenuItem {
+                text: qsTr("&Open")
+                onTriggered: console.log("Open action triggered");
+            }
+            MenuItem {
+                text: qsTr("Exit")
+                onTriggered: Qt.quit();
+            }
+        }
+    }
+
     maximumWidth: 320//Screen.width /4
     maximumHeight: Screen.height/2
     minimumWidth: 320
@@ -92,5 +109,4 @@ Window{
             console.log(audioPlayer.metaData.title)
         }
     }
-
 }
