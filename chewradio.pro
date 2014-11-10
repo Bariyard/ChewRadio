@@ -12,5 +12,7 @@ QML_IMPORT_PATH =
 # Default rules for deployment.
 include(deployment.pri)
 ICON = resources/icon.png
-macx: ICON = resources/icon.icns
-win32: RC_FILE = resources/icon.rc
+macx: ICON = resources/chewradio.icns
+win32: RC_FILE = resources/chewradio.rc
+
+OTHER_FILES += resources/chewradio.rc
