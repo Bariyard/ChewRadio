@@ -2,7 +2,7 @@ import QtQuick 2.0
 
 Item {
     id: radioPlayerItem
-    property string stationArtwork: ""
+    property string stationArtwork: "resources/icon.png"
     property string stationName: "-"
     property string stationSite: "-"
 
