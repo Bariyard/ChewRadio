@@ -111,16 +111,20 @@ Item {
             x: radioPlayerRec.width - 40
             y: radioPlayerRec.height - 40
             Text{
+                id: hideText
                 text: "Hide"
                 anchors.fill: hideRec
             }
 
             MouseArea{
                 anchors.fill: hideRec
+                hoverEnabled: true
                 onClicked: {
                     playRec.visible = false
                     head.showButtonVisible = true
                 }
+                onEntered: hideText.color = "orange"
+                onExited: hideText.color = "black"
             }
         }
 

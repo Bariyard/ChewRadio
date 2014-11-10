@@ -133,10 +133,13 @@ Item {
 
             MouseArea{
                 anchors.fill: showRadioPlayerRec
+                hoverEnabled: true
                 onClicked: {
                     playRec.visible = true
                     showButtonVisible = false
                 }
+                onEntered: showText.color = "violet"
+                onExited: showText.color = "orange"
             }
         }
     }
