@@ -3,8 +3,8 @@ import QtQuick 2.0
 Item {
     id: radioPlayerItem
     property string stationArtwork: "resources/icon.png"
-    property string stationName: "-"
-    property string stationSite: "-"
+    property string stationName: "chew radio"
+    property string stationSite: ""
 
     Rectangle{
         id: radioPlayerRec
@@ -78,7 +78,7 @@ Item {
             Column{
                 id: stationInfo
                 Row{
-                    Text{
+                    Text {
                         text: "Station: "
                     }
                     Text {
@@ -88,10 +88,15 @@ Item {
 
                 Row{
                     Text{
-                        text: "Site: "
-                    }
-                    Text {
-                        text: stationSite
+                        id: siteText
+                        text: "Site"
+                        MouseArea{
+                           anchors.fill: siteText
+                           onClicked:  Qt.openUrlExternally(stationSite)
+                           hoverEnabled: true
+                           onEntered: siteText.color = "orange"
+                           onExited:  siteText.color = "black"
+                        }
                     }
                 }
             }

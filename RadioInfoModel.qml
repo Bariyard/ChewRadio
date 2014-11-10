@@ -42,8 +42,6 @@ ListModel{
         site: "http://www.bbc.co.uk/5live"
     }
 
-
-
     ListElement{
         name: "Heart Radio UK"
         icon: "Artwork/logo/Heart Radio uk.png"
@@ -69,7 +67,6 @@ ListModel{
         site: "http://www.classicfm.com/"
     }
 
-
     ListElement{
         name: "KISS"
         icon: "Artwork/logo/Kiss FM.png"
@@ -77,7 +74,6 @@ ListModel{
         streamingUrl: "http://icy-e-02.sharp-stream.com:80/kiss100.mp3"
         site: "www.kissfmuk.com/"
     }
-
 
     ListElement{
         name: "Smooth"
@@ -116,8 +112,6 @@ ListModel{
         site: "www.kcrw.com/"
     }
 
-
-
     ListElement{
         name: "KEXP"
         icon: "Artwork/logo/kexp.png"
@@ -150,10 +144,4 @@ ListModel{
         streamingUrl: "http://streaming.radionomy.com/BrooklynRadio"
         site: "http://brooklynradio.com/"
     }
-
-
-
-
-
-
 }
